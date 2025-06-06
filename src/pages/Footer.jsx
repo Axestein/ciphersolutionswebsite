@@ -1,7 +1,6 @@
 export default function SimpleFooter() {
   return (
     <footer id="contact" className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white">
-      {/* Newsletter */}
       <div className="border-b border-blue-700/50 py-12 px-6 text-center">
         <h3 className="text-2xl font-bold mb-2">Stay in the loop</h3>
         <p className="text-blue-200 mb-6">Subscribe to get our latest updates and news.</p>
@@ -17,8 +16,7 @@ export default function SimpleFooter() {
         </div>
       </div>
 
-      {/* Links */}
-      <div className="py-12 px-6 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center sm:text-left ml-60 container mx-auto">
+      <div className="py-12 px-6 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center sm:text-left container mx-auto">
         <div>
           <h4 className="font-semibold text-white mb-4">Product</h4>
           <ul className="space-y-2 text-blue-200 text-sm">
@@ -46,7 +44,6 @@ export default function SimpleFooter() {
         </div>
       </div>
 
-      {/* Bottom */}
       <div className="border-t border-blue-700/50 text-sm text-blue-300 text-center py-6">
         © {new Date().getFullYear()} CipherSolutions. All rights reserved.
       </div>

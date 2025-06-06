@@ -1,5 +1,6 @@
 "use client";
 import { useState } from 'react';
+import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 
 const faqs = [
   { question: 'What is x?', answer: 'y' },
@@ -28,7 +29,9 @@ export default function FAQSection() {
                 className="w-full text-left px-6 py-4 bg-white hover:bg-blue-100 transition-colors flex justify-between items-center"
               >
                 <span className="text-blue-800 font-medium">{faq.question}</span>
-                <span className="text-blue-500">{openIndex === index ? '^' : 'V'}</span>
+                <span className="text-blue-500 text-xl">
+                  {openIndex === index ? <FiChevronUp /> : <FiChevronDown />}
+                </span>
               </button>
               {openIndex === index && (
                 <div className="px-6 py-4 bg-blue-50 text-blue-700">

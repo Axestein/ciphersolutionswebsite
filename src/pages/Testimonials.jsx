@@ -58,7 +58,6 @@ const testimonials = [
   }
 ];
 
-// Card component defined within the same file
 const Card = ({ children, className = '', ...props }) => {
   return (
     <div 
@@ -107,14 +106,12 @@ const TestimonialCard = ({ testimonial, index }) => {
 const Testimonials = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-50">
-      {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-200 rounded-full opacity-20 blur-3xl"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-300 rounded-full opacity-15 blur-3xl"></div>
       </div>
 
       <div className="relative z-10">
-        {/* Header Section */}
         <div className="text-center py-16 px-6">
           <div className="max-w-4xl mx-auto">
             <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -130,7 +127,6 @@ const Testimonials = () => {
           </div>
         </div>
 
-        {/* Testimonials Grid */}
         <div className="max-w-7xl mx-auto px-6 pb-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((testimonial, index) => (
@@ -139,7 +135,6 @@ const Testimonials = () => {
           </div>
         </div>
 
-        {/* Stats Section */}
         <div className="bg-gradient-to-r from-blue-600 to-blue-800 py-16 px-6">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
@@ -163,7 +158,6 @@ const Testimonials = () => {
           </div>
         </div>
 
-        {/* CTA Section */}
         <div className="text-center py-16 px-6">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
