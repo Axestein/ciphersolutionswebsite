@@ -82,12 +82,11 @@ export default function FeaturesPage() {
   ];
 
   return (
-    <div id="features" className="bg-white"> {/* Removed min-h-screen to prevent extra space */}
-      {/* Additional Features Grid */}
-      <div className="pb-14"> {/* Changed py-14 to pb-14 to remove top padding */}
+    <div id="features" className="bg-gradient-to-r from-teal-100 via-blue-50 to-purple-100"> 
+      <div className="pb-14 pt-10"> 
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl mt-10 lg:text-4xl font-bold text-gray-900 mb-4">
               Features we provide
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -99,9 +98,9 @@ export default function FeaturesPage() {
             {additionalFeatures.map((feature, index) => {
               const IconComponent = feature.icon;
               return (
-                <div key={index} className="group p-6 rounded-xl border border-gray-200 hover:border-blue-200 hover:shadow-lg transition-all">
-                  <div className="w-12 h-12 bg-blue-100 group-hover:bg-blue-600 rounded-lg flex items-center justify-center mb-4 transition-colors">
-                    <IconComponent className="w-6 h-6 text-blue-600 group-hover:text-white transition-colors" />
+                <div key={index} className="group p-6 rounded-xl bg-white border-2 border-gray-100 hover:border-blue-300 hover:shadow-lg transition-all">
+                  <div className="w-12 h-12 bg-blue-50 group-hover:bg-blue-100 rounded-lg flex items-center justify-center mb-4 transition-colors border-2 border-blue-100 group-hover:border-blue-200">
+                    <IconComponent className="w-6 h-6 text-blue-600 group-hover:text-blue-700 transition-colors" />
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature.title}</h3>
                   <p className="text-gray-600">{feature.description}</p>
